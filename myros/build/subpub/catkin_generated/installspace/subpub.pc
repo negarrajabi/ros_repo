@@ -1,0 +1,8 @@
+prefix=/home/negar/mytutorials/install
+
+Name: subpub
+Description: Description of subpub
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/negar/mytutorials/install/lib 
+Requires: 

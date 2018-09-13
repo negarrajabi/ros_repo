@@ -1,0 +1,8 @@
+prefix=/home/negar/Desktop/ros_repo/myros/install
+
+Name: beginner_tutorials
+Description: Description of beginner_tutorials
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/negar/Desktop/ros_repo/myros/install/lib 
+Requires: 
