@@ -1,0 +1,8 @@
+prefix=/home/negar/mytutorials/devel
+
+Name: subpub
+Description: Description of subpub
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/negar/mytutorials/devel/lib 
+Requires: 
