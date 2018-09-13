@@ -4,5 +4,13 @@
 #include <sstream>
 int main(int argc, char **argv)
 {
+ ros::init(argc, argv, "talker");
+ ros::NodeHandle n;
+ while (ros::ok())
+  {
+	 ros::spinOnce();
+       	loop_rate.sleep();
+
+  }
 return 0;
 }
