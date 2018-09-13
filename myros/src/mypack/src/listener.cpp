@@ -18,7 +18,7 @@ void chatterCallback(const geometry_msgs::Twist::ConstPtr& CurPose)
            ROS_INFO("%s", msgs.data.c_str());
 	   msg.linear.x = CurPose->linear.x;
            msg.linear.y = CurPose->linear.y;
-	   turtle_vel.publish(msg);
+//	   turtle_vel.publish(msg);
 		 	
 }
 
@@ -32,4 +32,22 @@ int main(int argc, char **argv)
          ros::Publisher turtle_vel = n.advertise<geometry_msgs::Twist>("turtle2/	cmd_vel", 5);
         ros::Subscriber sub = n.subscribe("turtle1/cmd_vel", 5, chatterCallback)
 
+while (ros::ok())
+        {
+
+
+
+ turtle_vel.publish(msg);
+ ros::spinOnce();
+
+                loop_rate.sleep();
+
+
+
 }
+
+return 0;
+}
+
+
+
